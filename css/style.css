@@ -142,7 +142,7 @@ body {
     align-items: flex-end;
 }
 
-.icon-set .fas.fa-arrow-down {
+.icon-set .fa-arrow-down {
     font-size: 1.5em;
     animation: 2s arrow-down alternate infinite;
     text-decoration: none;
@@ -152,8 +152,6 @@ body {
 /* On veut que la partie principale ait une position relative */
 .main-website-part {
     position: relative;
-    width: 95%;
-    margin: auto;
 }
 
 .main-website-part > h2 {
@@ -240,6 +238,95 @@ body {
     object-fit: cover;
     border-radius: 10px;
     transition: .5s;
+}
+
+.stats-website {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.stats-website > h2,
+.prices > h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 50px;
+}
+
+.flex-stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.flex-stats h3 {
+    font-size: 2.5em;
+}
+
+.flex-stats small {
+    font-size: 1.2em;
+}
+
+.prices {
+    background-color: #2a262647;
+}
+
+.prices > h2 ~ p,
+.stats-website > h2 ~ p {
+    text-align: center;
+    margin-top: -40px;
+    font-size: 1.2em;
+}
+
+.main-website-part > h2 ~ p {
+    text-align: center;
+    margin-top: -10px;
+    font-size: 1.2em;
+}
+
+.prices-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.prices .card {
+    width: 500px;
+    height: auto;
+    background-color: #403e3c;
+    margin-top: 20px;
+    border-radius: 60px / 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.prices-list h3 {
+    text-align: center;
+    font-size: 2.1em;
+}
+
+.prices-list h3 ~ p {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.prices-list ul {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.prices-list li {
+    margin-bottom: 20px;
+}
+
+.prices-list span {
+    margin-left: 10px;
 }
 
 /* On défini une animation sur le fleche */
