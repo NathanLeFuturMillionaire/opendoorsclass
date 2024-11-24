@@ -243,6 +243,10 @@ body {
 .stats-website {
     position: relative;
     margin-bottom: 100px;
+    background-color: white;
+    color: #000;
+    padding: 40px;
+    height: 300px;
 }
 
 .stats-website > h2,
@@ -360,7 +364,7 @@ body {
 }
 
 .contact-form .right-form {
-    background: url("../images/gallery/6.jpg") center/cover no-repeat;
+    background: url("../images/gallery/6.jpg") center/cover;
     height: 500px;
     flex: 0.7;
     display: flex;
